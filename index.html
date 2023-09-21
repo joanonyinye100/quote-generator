@@ -41,7 +41,7 @@
         }
     </style>
 </head>
-<body id="bodycolor">
+<body>
     <div id="quoteContainer">
         <p id="quote"> Loading...</p>
         <span id="author"></span>
@@ -58,7 +58,7 @@
         let randomQuote = Math.floor(Math.random() *20) + 1;
         let quoteContainer = document.getElementById("quoteContainer");
         let author = document.getElementById("author");
-        let bodycolor= document.getElementById("bodycolor")
+        
     
 
 
@@ -68,7 +68,7 @@
        quote.innerHTML = quoteElement[0];
        author.innerHTML= quoteElement[1];
        author.style.fontSize = "15px";
-       bodycolor.style.backgroundColor = colorElement;
+       document.body.style.backgroundColor = colorElement;
         break;
         }
         function generateButton(){
